@@ -1,16 +1,16 @@
 # ❤️ Heart Disease Prediction Using Machine Learning
 
-My first Machine Learning model! 🎉
+### My First Machine Learning Model! 🎉
 
-I am excited to share my first machine learning project, **Heart Disease Prediction**, built using Python and Streamlit. As a beginner in Machine Learning, this project is an important step in my journey toward becoming a Data Scientist.
+I am excited to share my first Machine Learning project, **Heart Disease Prediction**, built using Python and Streamlit. As a beginner in Machine Learning, this project is an important milestone in my journey toward becoming a Data Scientist.
 
-The project uses a trained Logistic Regression model to predict the risk of heart disease based on user-provided health parameters. I developed a simple, interactive web application where users can enter their health information and receive a model-generated prediction.
+This project uses a trained **Logistic Regression model** to predict the risk of heart disease based on user-provided health parameters. I developed an interactive web application where users can enter their health information and receive a model-generated prediction.
 
 ## 🚀 Project Overview
 
-The application collects different health-related parameters, processes the input data, scales the features, and passes them to a trained machine learning model to generate a prediction.
+The application collects health-related parameters, processes the input data, scales the features, and passes them to a trained machine learning model to generate a prediction.
 
-This project helped me understand how to integrate a machine learning model into a web application and make it interactive using Streamlit.
+This project helped me understand how to integrate a machine learning model into a web application using Streamlit.
 
 ## 🛠️ Technologies Used
 
@@ -18,7 +18,7 @@ This project helped me understand how to integrate a machine learning model into
 - **Pandas** – Data manipulation and preprocessing
 - **Streamlit** – Interactive web application
 - **Scikit-learn** – Machine learning model and feature scaling
-- **Joblib** – Loading saved machine learning models
+- **Joblib** – Saving and loading machine learning models
 
 ## 📊 Features
 
@@ -28,8 +28,8 @@ This project helped me understand how to integrate a machine learning model into
 - 🩸 Blood pressure and cholesterol inputs
 - 💓 Maximum heart rate input
 - 📈 Resting ECG and ST slope selection
-- ⚙️ Automatic feature alignment with the model's expected input columns
-- 🤖 Logistic Regression-based prediction
+- ⚙️ Feature alignment with the model's expected input columns
+- 🤖 Logistic Regression-based predictions
 - ✅ Interactive prediction results
 
 ## 🧠 Machine Learning Model
@@ -42,7 +42,18 @@ The application uses three saved files:
 - `scaler.pkl` – Saved feature scaler
 - `columns.pkl` – Expected model input columns
 
-The application aligns the input features with the expected columns, applies the saved scaler, and generates a prediction using the trained model.
+The application aligns the input features with the expected columns, applies the saved scaler, and generates a prediction.
+
+## 📈 Model Performance
+
+The Logistic Regression model achieved the following evaluation results:
+
+| Evaluation Metric | Score |
+|---|---:|
+| Accuracy | **86.96%** |
+| F1-Score | **88.46%** |
+
+These metrics provide an initial evaluation of the model's classification performance. Actual performance may vary depending on the evaluation dataset and how well the model generalizes to new data.
 
 ## 📂 Project Structure
 
@@ -57,7 +68,7 @@ Heart-Disease-Prediction/
 └── README.md
 ```
 
-*Note: The structure above is a suggested repository layout. Add `requirements.txt` and the other files if they are not already present in your project.*
+*Note: This is the suggested repository structure. Ensure the listed files are included in your repository.*
 
 ## ⚙️ How to Run the Project
 
@@ -67,7 +78,7 @@ Heart-Disease-Prediction/
 git clone YOUR_GITHUB_REPOSITORY_URL
 ```
 
-### 2. Open the project folder
+### 2. Navigate to the project folder
 
 ```bash
 cd Heart-Disease-Prediction
@@ -91,20 +102,20 @@ The application will open in your browser.
 
 While building my first machine learning model, I learned about:
 
-- Integrating a trained ML model with a web application.
-- Using Logistic Regression for classification.
-- Understanding feature scaling and preprocessing.
+- Building a classification model using Logistic Regression.
+- Understanding feature scaling and data preprocessing.
 - Handling categorical variables and one-hot encoded features.
 - Loading saved models using Joblib.
-- Building an interactive application with Streamlit.
-- Connecting Python, Pandas, and Scikit-learn in a practical project.
+- Integrating Scikit-learn with Streamlit.
+- Creating an interactive machine learning web application.
+- Evaluating model performance using accuracy and F1-score.
 
 ## 🔮 Future Improvements
 
 I plan to improve this project by:
 
 - Comparing Logistic Regression with other classification algorithms.
-- Evaluating model performance using accuracy, precision, recall, F1-score, and a confusion matrix.
+- Evaluating precision, recall, and the confusion matrix.
 - Improving the user interface.
 - Adding model performance visualizations.
 - Deploying the application online.
